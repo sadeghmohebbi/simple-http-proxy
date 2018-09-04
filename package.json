@@ -1,0 +1,26 @@
+{
+  "name": "simple-http-proxy",
+  "version": "1.0.0",
+  "description": "http-proxy proxy-chain-exapmle",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadeghmohebbi/simple-http-proxy.git"
+  },
+  "keywords": [
+    "http-proxy",
+    "proxy-chain-exapmle"
+  ],
+  "author": "Sadegh Mohebbi <mohebbi.sadegh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sadeghmohebbi/simple-http-proxy/issues"
+  },
+  "homepage": "https://github.com/sadeghmohebbi/simple-http-proxy#readme",
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
