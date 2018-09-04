@@ -7,7 +7,7 @@ const requestHandler = (request, response) => {
 
 const http_server = http.createServer(requestHandler)
 
-http_server.listen(8080, (err) => {
+http_server.listen(process.env.PORT || 80, (err) => {
     if (err) {
         return console.log('something bad happened', err)
     }
@@ -15,7 +15,7 @@ http_server.listen(8080, (err) => {
 })
 
 const proxy_server = new ProxyChain.Server({
-    port: 8000,
+    port: process.env.PORT || 8000,
     verbose: false,
     prepareRequestFunction: ({ request, username, password, hostname, port, isHttp }) => {
         return {
