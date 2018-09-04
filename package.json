@@ -4,7 +4,8 @@
   "description": "http-proxy proxy-chain-exapmle",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,6 @@
   "dependencies": {
     "npm": "^6.4.1",
     "proxy-chain": "^0.2.4"
-  }
+  },
+  "devDependencies": {}
 }
