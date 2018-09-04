@@ -5,15 +5,16 @@ const requestHandler = (request, response) => {
     response.end('Hello Node.js Http Proxy Server!')
 }
 
-const server = http.createServer(requestHandler)
+const http_server = http.createServer(requestHandler)
 
-server.listen(8080, (err) => {
+http_server.listen(8080, (err) => {
     if (err) {
         return console.log('something bad happened', err)
     }
+    console.log(`Http server is listening on port ${8080}`);
 })
 
-const server = new ProxyChain.Server({
+const proxy_server = new ProxyChain.Server({
     port: 8000,
     verbose: false,
     prepareRequestFunction: ({ request, username, password, hostname, port, isHttp }) => {
@@ -23,6 +24,6 @@ const server = new ProxyChain.Server({
     },
 })
 
-server.listen(() => {
+proxy_server.listen(() => {
     console.log(`Proxy server is listening on port ${8000}`);
 })

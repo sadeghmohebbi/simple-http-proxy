@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sadeghmohebbi/simple-http-proxy#readme",
   "dependencies": {
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "proxy-chain": "^0.2.4"
   }
 }
